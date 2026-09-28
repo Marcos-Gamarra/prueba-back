@@ -25,8 +25,6 @@ Para crear la base de datos `app.db` y aplicar todas las migraciones, desde la r
   dotnet ef database update --project PruebaTecnicaBack.Api
 ```
 
-> **Nota sobre Concurrencia**: La aplicación inicializa automáticamente SQLite en modo **WAL** (`PRAGMA journal_mode=WAL;`) en el arranque, permitiendo lecturas y escrituras concurrentes sin bloqueos de archivo.
-
 ---
 
 ## 3. Cómo Ejecutar el Proyecto
