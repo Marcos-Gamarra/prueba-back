@@ -19,11 +19,10 @@ Backend REST desarrollado en **.NET 10** utilizando **Minimal API**, **Entity Fr
 El proyecto utiliza Entity Framework Core con SQLite (`Microsoft.EntityFrameworkCore.Sqlite`) y `EntityFrameworkCore.Exceptions.Sqlite`.
 
 ### Aplicar migraciones:
-Para crear la base de datos `app.db` y aplicar todas las migraciones:
+Para crear la base de datos `app.db` y aplicar todas las migraciones, desde la raiz del proyecto:
 ```bash
   dotnet build
   dotnet ef database update --project PruebaTecnicaBack.Api
-  dotnet run --project PruebaTecnicaBack.Api
 ```
 
 > **Nota sobre Concurrencia**: La aplicación inicializa automáticamente SQLite en modo **WAL** (`PRAGMA journal_mode=WAL;`) en el arranque, permitiendo lecturas y escrituras concurrentes sin bloqueos de archivo.
